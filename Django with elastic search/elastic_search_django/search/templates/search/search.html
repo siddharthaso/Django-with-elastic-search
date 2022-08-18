@@ -1,0 +1,14 @@
+<form mehtod="get">
+    <input id="q" name="q" type="text" placeholder="your search...">
+
+</form>
+{% if posts %}
+{% for item in posts %}
+    ID :{{item.id}}<br>
+    Title :{{item.title}}<br>
+    Content: {{item.content}}<br>
+    {% comment %} <button class="btn btn-primary" name="form2">Delete</button> {% endcomment %}
+    <a href="{% url  'delete' item.id %}">Delete</a>
+    <br><br>
+{% endfor %}
+{% endif %}

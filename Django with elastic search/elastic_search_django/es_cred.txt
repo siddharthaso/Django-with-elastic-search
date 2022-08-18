@@ -1,0 +1,23 @@
+------------------------------------------------------------------------------------------------------------------------------------------------
+-> Elasticsearch security features have been automatically configured!
+-> Authentication is enabled and cluster connections are encrypted.
+
+X Unable to auto-generate the password for the elastic built-in superuser.
+Password for the [elastic] user successfully reset.
+New value: YFK_rChCM7r-Z743iK-1
+SiddelasticMaster1234
+
+->  HTTP CA certificate SHA-256 fingerprint:
+  d50573c6788b6a622c960d134d24304a8409e215c3bf37d728706ef4a0ee5542
+
+X Unable to generate an enrollment token for Kibana instances, try invoking `bin/elasticsearch-create-enrollment-token -s kibana`.
+eyJ2ZXIiOiI4LjMuMyIsImFkciI6WyIxOTIuMTY4LjQzLjI0NDo5MjAwIl0sImZnciI6ImQ1MDU3M2M2Nzg4YjZhNjIyYzk2MGQxMzRkMjQzMDRhODQwOWUyMTVjM2JmMzdkNzI4NzA2ZWY0YTBlZTU1NDIiLCJrZXkiOiJQN3MtcjRJQkJEUm5seGVnVGZEUzpnWGlfblBQclNtYUhNWFlMOVI3NVJ3In0=
+
+->  Configure other nodes to join this cluster:
+* On this node:
+  - Create an enrollment token with `bin/elasticsearch-create-enrollment-token -s node`.
+  - Uncomment the transport.host setting at the end of config/elasticsearch.yml.
+  - Restart Elasticsearch.
+* On other nodes:
+  - Start Elasticsearch with `bin/elasticsearch --enrollment-token <token>`, using the enrollment token that you generated.
+-------------------------------------------------------------------------------------------------------------------------------------------------
